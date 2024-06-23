@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<p align="center">Laravel-11 Api Resource | Rest Api Setup </a></p>
 
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
@@ -21,14 +21,30 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+## Rest Api List
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+  1. GET|HEAD        api/player .......................... player.index › PlayerController@index
+  2. POST            api/player .......................... player.store › PlayerController@store
+  3. GET|HEAD        api/player/{player} ................. player.show › PlayerController@show
+  4. PUT|PATCH       api/player/{player} ................. player.update › PlayerController@update
+  5. DELETE          api/player/{player} ................. player.destroy › PlayerController@destroy  
+  6. GET|HEAD        api/user ............................................... 
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Project Installation
+ - Please make sure all is set on your system and pre-installed to make laravel application
+ - Please visit laravel official website for proper steps to install all depandancies: **[Installation Guide](https://laravel.com/docs/11.x/installation)**
+# Steps
+    1. Clone the repository : git clone 
+    - git clone git@github.com:ninja143/laravel-laravel11_restapi.git
+    2. Setup .env file in root with your mysql database credentials
+    3. Download depandancies and run
+    - Composer install
+    - php artisan migrate:fresh --seed
+    - php artisan serve --port=8000
+    
+![image](https://github.com/ninja143/laravel-laravel11_restapi/assets/26186108/cbd3fdbd-d3a1-45e1-9a4c-d57eb56b6881)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
+    
 ## Laravel Sponsors
 
 We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
